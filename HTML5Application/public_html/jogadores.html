@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Jogadores, nascimento, times, histórico, títulos</title>
+        <meta name="description" 
+              content="Todos os detalhes dos jogadores, histórico de atuação, times, locais onde nasceram, idade">
+        <meta name="keywords"
+              content="informacao sobre o jogador, lugar onde nasceu o jogador, time de atuacao, data de nascimento do jogador, idade">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="icon" type="image/png" href="imagens/favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="./css/reset.css"/> 
+        <link rel="stylesheet" type="text/css" href="./css/container.css"/>
+        <link rel="stylesheet" type="text/css" href="./css/index.css"/>
+        <link rel="stylesheet" type="text/css" href="./css/jogadores.css"/>
+        
+    </head>
+    <body>
+        <div class="paiheader">
+            <div class="logoheader">
+                <header class="header">
+                    <a href="index.html"><h1>Futebol na Rede</h1></a>
+                    <h2>Jogadores</h2>
+                    <div class="filhoheader">
+                        <ul class="ulfilhoheader">
+                            <!--  <li>
+                                  <a href="www" target="blank"><img id="futebol-na-rede-youtube" src="imagens/layout/logo_youtube.png" alt="Youtube"  style=" display: block; border: none;">
+                                  </a>
+                              </li>-->
+                            <li>
+                                <a href="www" target="blank"><img id="futebol-na-rede-facebook" src="imagens/layout/logo_face.png" alt="Facebook"  style=" display: block; border: none;">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="www" target="blank"><img id="futebol-na-rede-twiter" src="imagens/layout/logo_twiter.png" alt="Twiter"  style=" display: block; border: none;">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="www" target="blank"><img id="futebol-na-rede-feed" src="imagens/layout/logo_rss.png" alt="Feed"  style=" display: block; border: none;">
+                                </a>
+                            </li>
+                        </ul>
+                        <div id="busca">
+                            <form method="post" name="form_busca" id="form" class="form">
+                                <fieldset>
+                                    <input id="busca" type="text" maxlength="40" value="" placeholder="encontre no Futebol na Rede" name="busca">
+                                    </input> 
+                                    <input id="submit" type="submit" value="Ok">
+                                    </input>  
+                                </fieldset>
+                            </form>    
+                        </div>
+                    </div>
+                </header>
+            </div>
+        </div>
+        <div class="paimiolo">
+            <div id="toTop">^</div>
+            <div class="divadsensse">
+                <script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+                </script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;width:728px;height:90px"
+                     data-ad-client="ca-pub-3802152117319215"
+                     data-ad-slot="1347327043"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+            <div class="miolocentral clearfix"><!-- Está com altura automática, no psd está 2325px -->
+                <div class="esquerda">  
+                    <aside>
+                        <div class="ads_200x90">
+                            <script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+                            </script>
+                            <ins class="adsbygoogle"
+                                 style="display:inline-block;width:200px;height:90px"
+                                 data-ad-client="ca-pub-3802152117319215"
+                                 data-ad-slot="4183042246"></ins>
+                            <script>
+                                (adsbygoogle = window.adsbygoogle || []).push({});
+                            </script>
+                        </div><!-- ads_200x90-->
+                        <nav>
+                            <div class="menunavegacao">   
+                                <ul>
+                                    <li>
+                                        <a href="www">
+                                            <div class="imgmenu" id="bola">
+                                            </div>    
+                                            <span>
+                                                Futebol ao vivo
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="www">
+                                            <div class="imgmenu" id="bolsa">
+                                            </div>
+                                            <span>
+                                                Shopping FNR
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="www">
+                                            <div class="imgmenu" id="apito">
+                                            </div>
+                                            <span>
+                                                Resultados
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="www">
+                                            <div class="imgmenu" id="calendario">
+                                            </div>
+                                            <span>
+                                                Próximos jogos
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="noticias_24h.html">
+                                            <div class="imgmenu" id="jornal">
+                                            </div>
+                                            <span>
+                                                Notícias
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="www">
+                                            <div class="imgmenu" id="cbf">
+                                            </div>
+                                            <span>
+                                                Seleção Brasileira
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>    
+                            </div>
+                            <div class="menunavegacao">   
+                                <a href="www">
+                                    <h3><span class="tops">Campeonatos</span></h3>
+                                </a>
+                                <ul id="campeonatos">
+                                    <li>
+                                        <a href="www">
+                                            <img id="lista" src="imagens/bandeiras/gaucho.png" alt="Bola"  style=" border: none;">
+                                            </img>
+                                            <span>
+                                                Gaúcho
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="www">
+                                            <img id="lista" src="imagens/bandeiras/catarinense.png" alt="Bola"  style="  border: none;">
+                                            </img>
+                                            <span>
+                                                Catarinense
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="www">
+                                            <img id="lista" src="imagens/bandeiras/paranaense.png" alt="Bola"  style=" border: none;">
+                                            </img>
+                                            <span>
+                                                Paranaense
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="www">
+                                            <img id="lista" src="imagens/bandeiras/paulista.png" alt="Bola"  style="border: none;">
+                                            </img>
+                                            <span>
+                                                Paulista
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="www">
+                                            <img id="lista" src="imagens/bandeiras/carioca.png" alt="Bola"  style="border: none;">
+                                            </img>
+                                            <span>
+                                                Carioca
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="www">
+                                            <img id="" src="imagens/bandeiras/mineiro.png" alt="Bola"  style=" border: none;">
+                                            </img>
+                                            <span>
+                                                Mineiro
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="www">
+                                            <img id="libertadores" src="imagens/bandeiras/libertadores.png" alt="Bola"  style="border: none;">
+                                            </img>
+                                            <span id="span_libertadores">
+                                                Libertadores
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="www">
+                                            <img id="sulamericana" src="imagens/bandeiras/sulamericana.png"     alt="Bola"  style=" border: none;">
+                                            </img>
+                                            <span id="span_sulamericana">
+                                                Sul Americana
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>    
+                            </div>
+                            <div class="menunavegacao">   
+                                <a href="www">
+                                    <h3><span class="tops">Especiais</span></h3>
+                                </a>
+                                <ul class="especiais">
+                                    <li>
+                                        <a href="www">
+                                            <span>
+                                                Estádios
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="www">
+                                            <span>
+                                                Regras do futebol
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="www">
+                                            <span>
+                                                História do futebol
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="www">
+                                            <span>
+                                                História do Brasileiro
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="www">
+                                            <span>
+                                                Jogadores
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="www">
+                                            <span>
+                                                Clubes
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="www">
+                                            <span>
+                                                Loteca
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="www">
+                                            <span>
+                                                Mascotes
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="www">
+                                            <span>
+                                                Estatuto do torcedor
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="www">
+                                            <span>
+                                                Lei Pelé
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>    
+                            </div>
+                            <div class="menunavegacao">   
+                                <a href="www">
+                                    <h3><span class="tops">Multimídia</span></h3>
+                                </a>
+                                <ul class="especiais">
+                                    <li>
+                                        <a href="www">
+                                            <span>
+                                                Brasões
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="www">
+                                            <span>
+                                                Escudos botões
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="www">
+                                            <span>
+                                                Hinos
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="www">
+                                            <span>
+                                                Rádios parceiras
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="www">
+                                            <span>
+                                                Wallpapers
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>    
+                            </div>   
+                        </nav> 
+                        <div class="adsense_160x600">
+                            <script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                            <!-- 160x600 da Hora -->
+                            <ins class="adsbygoogle"
+                                 style="display:inline-block;width:160px;height:600px"
+                                 data-ad-client="ca-pub-3802152117319215"
+                                 data-ad-slot="9526081845"></ins>
+                            <script>
+                                (adsbygoogle = window.adsbygoogle || []).push({});
+                            </script>
+                        </div>    
+                    </aside>        
+                </div><!-- div esquerda-->
+                <div class="direita">
+                    <article>
+                        <div class="jogadores">
+                            <h1>Jogadores</h1>
+                            <div class="clubes_redes_sociais_fnr">
+                                    <img id="redessociais" src="imagens/adsensesup/redessociais.png" alt="Adssense"  style="border: none;"> 
+                            </div>
+                        </div>
+                        <div class="secao1"> 
+                            <section>   
+                                <div class="detalhe_do_jogador clearfix">
+                                    <div class="foto_do_jogador"> 
+                                        <img id="jogador" src="imagens/jogadores/imagens/pato.jpg" alt="foto do jogador"  style="border: none;">
+                                    </div> 
+                                    <div class="nome_do_jogador">
+                                        <h2>Alexandre Pato</h2>
+                                            <div class="brasao"><img id="imgdobrasao" title="São Paulo" src="imagens/clubes/brasoes/gremio_30x30.png" alt="foto do jogador"  style="border: none;"></div>
+                                                        <a href="www"><div class="twiter" title="Seguir"></div></a>
+                                    </div>
+                                    <a href="www">
+                                    <div class="informacoes">
+                                        <h3>Nascimento:&nbsp;</h3><span>1960</span><br>
+                                        <h3>Nasceu em:&nbsp;</h3><span>Araraquara, São Paulo</span><br>
+                                        <h3>Times:</h3>&nbsp;<p>Guarani, de Campinas (1978), São Paulo, Nápoli (Itália), Seleção Brasileira (1986 e 1990) e São 
+                                                           José-POA Títulos: Deu o título de campeão do Guarani (1978). Foi campeão Paulista em 1985 e 1987 e 
+                                                           Campeão Brasileiro em 1986 pelo São Paulo. Conquistou o Campeonato Italiano de 1990 jogando pelo Nápoli.
+                                                       </p><br>
+                                         <h3>Títulos: </h3><p>Campeonato Paulista (2004, 2006) Campeonato Brasileiro (2003), Copa do Brasil (2006).</p>               
+
+                                    </div>
+                                    </a>    
+                                    
+                                    
+                                </div>
+                            </section>
+                            <section>   
+                                <div class="detalhe_do_jogador clearfix">
+                                    <div class="foto_do_jogador"> 
+                                        <img id="jogador" src="imagens/jogadores/imagens/dalessandro.jpg" alt="foto do jogador"  style="border: none;">
+                                    </div> 
+                                    <div class="nome_do_jogador">
+                                        <h2>D' Alessandro</h2>
+                                            <div class="brasao"><img id="imgdobrasao" title="Internacional" src="imagens/clubes/brasoes/internacional_30x30.png" alt="foto do jogador"  style="border: none;"></div> 
+                                                        <a href="www"><div class="twiter" title="Seguir"></div></a>
+                                    </div>
+                                    <a href="www">
+                                    <div class="informacoes">
+                                        <h3>Nascimento:&nbsp;</h3><span>1960</span><br>
+                                        <h3>Nasceu em:&nbsp;</h3><span>Araraquara, São Paulo</span><br>
+                                        <h3>Times:</h3>&nbsp;<p>Guarani, de Campinas (1978), São Paulo, Nápoli (Itália), Seleção Brasileira (1986 e 1990) e São 
+                                                           José-POA Títulos: Deu o título de campeão do Guarani (1978). Foi campeão Paulista em 1985 e 1987 e 
+                                                           Campeão Brasileiro em 1986 pelo São Paulo. Conquistou o Campeonato Italiano de 1990 jogando pelo Nápoli.
+                                                       </p><br>
+                                         <h3>Títulos: </h3><p>Campeonato Paulista (2004, 2006) Campeonato Brasileiro (2003), Copa do Brasil (2006).</p>               
+
+                                    </div>
+                                    </a>    
+                                    
+                                    
+                                </div>
+                            </section>
+                            <section>   
+                                <div class="detalhe_do_jogador clearfix">
+                                    <div class="foto_do_jogador"> 
+                                        <img id="jogador" src="imagens/jogadores/imagens/fred.jpg" alt="foto do jogador"  style="border: none;">
+                                    </div> 
+                                    <div class="nome_do_jogador">
+                                        <h2>Fred</h2>
+                                            <div class="brasao"><img id="imgdobrasao" title="Fluminense" src="imagens/clubes/brasoes/botafogo_30x30.png" alt="foto do jogador"  style="border: none;"></div> 
+                                                        <a href="www"><div class="twiter" title="Seguir"></div></a>
+                                    </div>
+                                    <a href="www">
+                                    <div class="informacoes">
+                                        <h3>Nascimento:&nbsp;</h3><span>1960</span><br>
+                                        <h3>Nasceu em:&nbsp;</h3><span>Araraquara, São Paulo</span><br>
+                                        <h3>Times:</h3>&nbsp;<p>Guarani, de Campinas (1978), São Paulo, Nápoli (Itália), Seleção Brasileira (1986 e 1990) e São 
+                                                           José-POA Títulos: Deu o título de campeão do Guarani (1978). Foi campeão Paulista em 1985 e 1987 e 
+                                                           Campeão Brasileiro em 1986 pelo São Paulo. Conquistou o Campeonato Italiano de 1990 jogando pelo Nápoli.
+                                                       </p><br>
+                                         <h3>Títulos: </h3><p>Campeonato Paulista (2004, 2006) Campeonato Brasileiro (2003), Copa do Brasil (2006).</p>               
+
+                                    </div>
+                                    </a>    
+                                    
+                                    
+                                </div>
+                            </section>
+                            <section>   
+                                <div class="detalhe_do_jogador clearfix">
+                                    <div class="foto_do_jogador"> 
+                                        <img id="jogador" src="imagens/jogadores/imagens/barcos.jpg" alt="foto do jogador"  style="border: none;">
+                                    </div> 
+                                    <div class="nome_do_jogador">
+                                        <h2>Barcos</h2>
+                                            <div class="brasao"><img id="imgdobrasao" title="Gremio" src="imagens/clubes/brasoes/gremio_30x30.png" alt="foto do jogador"  style="border: none;"></div> 
+                                                        <a href="www"><div class="twiter" title="Seguir"></div></a>
+                                    </div>
+                                    <a href="www">
+                                    <div class="informacoes">
+                                        <h3>Nascimento:&nbsp;</h3><span>1960</span><br>
+                                        <h3>Nasceu em:&nbsp;</h3><span>Araraquara, São Paulo</span><br>
+                                        <h3>Times:</h3>&nbsp;<p>Guarani, de Campinas (1978), São Paulo, Nápoli (Itália), Seleção Brasileira (1986 e 1990) e São 
+                                                           José-POA Títulos: Deu o título de campeão do Guarani (1978). Foi campeão Paulista em 1985 e 1987 e 
+                                                           Campeão Brasileiro em 1986 pelo São Paulo. Conquistou o Campeonato Italiano de 1990 jogando pelo Nápoli.
+                                                       </p><br>
+                                         <h3>Títulos: </h3><p>Campeonato Paulista (2004, 2006) Campeonato Brasileiro (2003), Copa do Brasil (2006).</p>               
+
+                                    </div>
+                                    </a>    
+                                    
+                                    
+                                </div>
+                            </section>
+                            <section>   
+                                <div class="detalhe_do_jogador clearfix">
+                                    <div class="foto_do_jogador"> 
+                                        <img id="jogador" src="imagens/jogadores/imagens/ronaldinho.jpg" alt="foto do jogador"  style="border: none;">
+                                    </div> 
+                                    <div class="nome_do_jogador">
+                                        <h2>Ronaldinho Gaúcho</h2>
+                                            <div class="brasao"><img id="imgdobrasao" title="Atlético" src="imagens/clubes/brasoes/atletico_mg_30x30.png" alt="foto do jogador"  style="border: none;"></div> 
+                                                        <a href="www"><div class="twiter" title="Seguir"></div></a>
+                                    </div>
+                                    <a href="www">
+                                    <div class="informacoes">
+                                        <h3>Nascimento:&nbsp;</h3><span>1960</span><br>
+                                        <h3>Nasceu em:&nbsp;</h3><span>Araraquara, São Paulo</span><br>
+                                        <h3>Times:</h3>&nbsp;<p>Guarani, de Campinas (1978), São Paulo, Nápoli (Itália), Seleção Brasileira (1986 e 1990) e São 
+                                                           José-POA Títulos: Deu o título de campeão do Guarani (1978). Foi campeão Paulista em 1985 e 1987 e 
+                                                           Campeão Brasileiro em 1986 pelo São Paulo. Conquistou o Campeonato Italiano de 1990 jogando pelo Nápoli.
+                                                       </p><br>
+                                         <h3>Títulos: </h3><p>Campeonato Paulista (2004, 2006) Campeonato Brasileiro (2003), Copa do Brasil (2006).</p>               
+
+                                    </div>
+                                    </a>    
+                                    
+                                    
+                                </div>
+                            </section>
+                            <section>   
+                                <div class="detalhe_do_jogador clearfix">
+                                    <div class="foto_do_jogador"> 
+                                        <img id="jogador" src="imagens/jogadores/imagens/dede.jpg" alt="foto do jogador"  style="border: none;">
+                                    </div> 
+                                    <div class="nome_do_jogador">
+                                        <h2>Dedé</h2>
+                                            <div class="brasao"><img id="imgdobrasao" title="Cruzeiro" src="imagens/clubes/brasoes/atletico_pr_30x30.png" alt="foto do jogador"  style="border: none;"></div> 
+                                                        <a href="www"><div class="twiter" title="Seguir"></div></a>
+                                    </div>
+                                    <a href="www">
+                                    <div class="informacoes">
+                                        <h3>Nascimento:&nbsp;</h3><span>1960</span><br>
+                                        <h3>Nasceu em:&nbsp;</h3><span>Araraquara, São Paulo</span><br>
+                                        <h3>Times:</h3>&nbsp;<p>Guarani, de Campinas (1978), São Paulo, Nápoli (Itália), Seleção Brasileira (1986 e 1990) e São 
+                                                           José-POA Títulos: Deu o título de campeão do Guarani (1978). Foi campeão Paulista em 1985 e 1987 e 
+                                                           Campeão Brasileiro em 1986 pelo São Paulo. Conquistou o Campeonato Italiano de 1990 jogando pelo Nápoli.
+                                                       </p><br>
+                                         <h3>Títulos: </h3><p>Campeonato Paulista (2004, 2006) Campeonato Brasileiro (2003), Copa do Brasil (2006).</p>               
+
+                                    </div>
+                                    </a>    
+                                    
+                                    
+                                </div>
+                            </section>
+                            <section>   
+                                <div class="detalhe_do_jogador clearfix">
+                                    <div class="foto_do_jogador"> 
+                                        <img id="jogador" src="imagens/jogadores/imagens/ernane.jpg" alt="foto do jogador"  style="border: none;">
+                                    </div> 
+                                    <div class="nome_do_jogador">
+                                        <h2>Hernane</h2>
+                                            <div class="brasao"><img id="imgdobrasao" title="Flamengo" src="imagens/clubes/brasoes/corinthians_30x30.png" alt="foto do jogador"  style="border: none;"></div> 
+                                                        <a href="www"><div class="twiter" title="Seguir"></div></a>
+                                    </div>
+                                    <a href="www">
+                                    <div class="informacoes">
+                                        <h3>Nascimento:&nbsp;</h3><span>1960</span><br>
+                                        <h3>Nasceu em:&nbsp;</h3><span>Araraquara, São Paulo</span><br>
+                                        <h3>Times:</h3>&nbsp;<p>Guarani, de Campinas (1978), São Paulo, Nápoli (Itália), Seleção Brasileira (1986 e 1990) e São 
+                                                           José-POA Títulos: Deu o título de campeão do Guarani (1978). Foi campeão Paulista em 1985 e 1987 e 
+                                                           Campeão Brasileiro em 1986 pelo São Paulo. Conquistou o Campeonato Italiano de 1990 jogando pelo Nápoli.
+                                                       </p><br>
+                                         <h3>Títulos: </h3><p>Campeonato Paulista (2004, 2006) Campeonato Brasileiro (2003), Copa do Brasil (2006).</p>               
+
+                                    </div>
+                                    </a>    
+                                    
+                                    
+                                </div>
+                            </section>
+                            <section>   
+                                <div class="detalhe_do_jogador clearfix">
+                                    <div class="foto_do_jogador"> 
+                                        <img id="jogador" src="imagens/jogadores/imagens/jadson.jpg" alt="foto do jogador"  style="border: none;">
+                                    </div> 
+                                    <div class="nome_do_jogador">
+                                        <h2>Jadson</h2>
+                                            <div class="brasao"><img id="imgdobrasao" title="Corintians" src="imagens/clubes/brasoes/bahia_30x30.png" alt="foto do jogador"  style="border: none;"></div> 
+                                                        <a href="www"><div class="twiter" title="Seguir"></div></a>
+                                    </div>
+                                    <a href="www">
+                                    <div class="informacoes">
+                                        <h3>Nascimento:&nbsp;</h3><span>1960</span><br>
+                                        <h3>Nasceu em:&nbsp;</h3><span>Araraquara, São Paulo</span><br>
+                                        <h3>Times:</h3>&nbsp;<p>Guarani, de Campinas (1978), São Paulo, Nápoli (Itália), Seleção Brasileira (1986 e 1990) e São 
+                                                           José-POA Títulos: Deu o título de campeão do Guarani (1978). Foi campeão Paulista em 1985 e 1987 e 
+                                                           Campeão Brasileiro em 1986 pelo São Paulo. Conquistou o Campeonato Italiano de 1990 jogando pelo Nápoli.
+                                                       </p><br>
+                                         <h3>Títulos: </h3><p>Campeonato Paulista (2004, 2006) Campeonato Brasileiro (2003), Copa do Brasil (2006).</p>               
+
+                                    </div>
+                                    </a>    
+                                    
+                                    
+                                </div>
+                            </section>
+                            <section>   
+                                <div class="detalhe_do_jogador clearfix">
+                                    <div class="foto_do_jogador"> 
+                                        <img id="jogador" src="imagens/jogadores/imagens/jeferson.jpg" alt="foto do jogador"  style="border: none;">
+                                    </div> 
+                                    <div class="nome_do_jogador">
+                                        <h2>Jeferson</h2>
+                                            <div class="brasao"><img id="imgdobrasao" title="Botafogo" src="imagens/clubes/brasoes/cruzeiro_30x30.png" alt="foto do jogador"  style="border: none;"></div> 
+                                                        <a href="www"><div class="twiter" title="Seguir"></div></a>
+                                    </div>
+                                    <a href="www">
+                                    <div class="informacoes">
+                                        <h3>Nascimento:&nbsp;</h3><span>1960</span><br>
+                                        <h3>Nasceu em:&nbsp;</h3><span>Araraquara, São Paulo</span><br>
+                                        <h3>Times:</h3>&nbsp;<p>Guarani, de Campinas (1978), São Paulo, Nápoli (Itália), Seleção Brasileira (1986 e 1990) e São 
+                                                           José-POA Títulos: Deu o título de campeão do Guarani (1978). Foi campeão Paulista em 1985 e 1987 e 
+                                                           Campeão Brasileiro em 1986 pelo São Paulo. Conquistou o Campeonato Italiano de 1990 jogando pelo Nápoli.
+                                                       </p><br>
+                                         <h3>Títulos: </h3><p>Campeonato Paulista (2004, 2006) Campeonato Brasileiro (2003), Copa do Brasil (2006).</p>               
+
+                                    </div>
+                                    </a>    
+                                    
+                                    
+                                </div>
+                            </section>
+                            <section>   
+                                <div class="detalhe_do_jogador clearfix">
+                                    <div class="foto_do_jogador"> 
+                                        <img id="jogador" src="imagens/jogadores/imagens/rogerio.jpg" alt="foto do jogador"  style="border: none;">
+                                    </div> 
+                                    <div class="nome_do_jogador">
+                                        <h2>Rogério Ceni</h2>
+                                            <div class="brasao"><img id="imgdobrasao" title="São Paulo" src="imagens/clubes/brasoes/sao_paulo_30x30.png" alt="foto do jogador"  style="border: none;"></div> 
+                                                        <a href="www"><div class="twiter" title="Seguir"></div></a>
+                                    </div>
+                                    <a href="www">
+                                    <div class="informacoes">
+                                        <h3>Nascimento:&nbsp;</h3><span>1960</span><br>
+                                        <h3>Nasceu em:&nbsp;</h3><span>Araraquara, São Paulo</span><br>
+                                        <h3>Times:</h3>&nbsp;<p>Guarani, de Campinas (1978), São Paulo, Nápoli (Itália), Seleção Brasileira (1986 e 1990) e São 
+                                                           José-POA Títulos: Deu o título de campeão do Guarani (1978). Foi campeão Paulista em 1985 e 1987 e 
+                                                           Campeão Brasileiro em 1986 pelo São Paulo. Conquistou o Campeonato Italiano de 1990 jogando pelo Nápoli.
+                                                       </p><br>
+                                         <h3>Títulos: </h3><p>Campeonato Paulista (2004, 2006) Campeonato Brasileiro (2003), Copa do Brasil (2006).</p>               
+
+                                    </div>
+                                    </a>    
+                                    
+                                    
+                                </div>
+                            </section>
+                            <section>   
+                                <div class="detalhe_do_jogador clearfix">
+                                    <div class="foto_do_jogador"> 
+                                        <img id="jogador" src="imagens/jogadores/imagens/bayer.jpg" alt="foto do jogador"  style="border: none;">
+                                    </div> 
+                                    <div class="nome_do_jogador">
+                                        <h2>Paulo Bayer</h2>
+                                            <div class="brasao"><img id="imgdobrasao" title="Atl. Paranaense" src="imagens/clubes/brasoes/coritiba_30x30.png" alt="foto do jogador"  style="border: none;"></div> 
+                                                        <a href="www"><div class="twiter" title="Seguir"></div></a>
+                                    </div>
+                                    <a href="www">
+                                    <div class="informacoes">
+                                        <h3>Nascimento:&nbsp;</h3><span>1960</span><br>
+                                        <h3>Nasceu em:&nbsp;</h3><span>Araraquara, São Paulo</span><br>
+                                        <h3>Times:</h3>&nbsp;<p>Guarani, de Campinas (1978), São Paulo, Nápoli (Itália), Seleção Brasileira (1986 e 1990) e São 
+                                                           José-POA Títulos: Deu o título de campeão do Guarani (1978). Foi campeão Paulista em 1985 e 1987 e 
+                                                           Campeão Brasileiro em 1986 pelo São Paulo. Conquistou o Campeonato Italiano de 1990 jogando pelo Nápoli.
+                                                       </p><br>
+                                         <h3>Títulos: </h3><p>Campeonato Paulista (2004, 2006) Campeonato Brasileiro (2003), Copa do Brasil (2006).</p>               
+
+                                    </div>
+                                    </a>    
+                                    
+                                    
+                                </div>
+                            </section>
+
+
+                            
+                            
+                    
+                     
+                        
+                        </div> <!-- secao1--> 
+                    </article> 
+                </div>    <!-- div direita-->
+            </div> <!-- miolocentral clearfix--> 
+            <div class="divadsensse">
+                <script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+                </script>
+                <ins class="adsbygoogle"
+                     style="display:inline-block;width:728px;height:90px"
+                     data-ad-client="ca-pub-3802152117319215"
+                     data-ad-slot="1347327043"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>  
+        </div> <!-- di paimiolo-->            
+        <div class="footer">
+            <div class="bgcenterbottom">
+                <footer>
+                    <div class="menu_footer ">  
+                        <nav>
+                            <div class="lista_footer">
+                                <h3>MENU</h3>
+                                <ul>
+                                    <li><a href="www">Home</a></li>
+                                    <li><a href="www">Futebol ao vivo</a></li>
+                                    <li><a href="www">Shoping FNR</a></li>
+                                    <li><a href="www">Resultados</a></li>
+                                    <li><a href="www">Próximos jogos</a></li>
+                                    <li><a href="www">Notícias</a></li>
+                                    <li><a href="www">Especiais</a></li>
+                                    <li><a href="www">Multimídia</a></li>
+                                    <li><a href="www">O site</a></li>
+                                    <li><a href="www">Sobre</a></li>
+                                    <li><a href="www">Contato</a></li>
+                                </ul>  
+                            </div>
+                            <div class="lista_footer">
+                                <h3>CAMPEONATOS</h3>
+                                <ul>
+                                    <li><a href="www">Brasileirão A</a></li>
+                                    <li><a href="www">Brasileirão B</a></li>
+                                    <li><a href="www">Brasileirão C</a></li>
+                                    <li><a href="www">Libertadores</a></li>
+                                    <li><a href="www">Copa do Brasil</a></li>
+                                    <li><a href="www">Sul-Americana</a></li>
+                                    <li><a href="www">Copa FGF</a></li>
+                                    <li><a href="www">Catarinense</a></li>
+                                    <li><a href="www">Carioca</a></li>
+                                    <li><a href="www">Paulista</a></li>
+                                    <li><a href="www">Paranaense</a></li>
+                                    <li><a href="www">Mineiro</a></li>
+                                </ul>  
+                            </div>
+                            <div class="lista_footer">
+                                <h3>ESPECIAIS</h3>
+                                <ul>
+                                    <li><a href="www">Estádios</a></li>
+                                    <li><a href="www">Regras do Futebol</a></li>
+                                    <li><a href="www">História do Futebol</a></li>
+                                    <li><a href="www">História do Brasileiro</a></li>
+                                    <li><a href="www">Jogadores</a></li>
+                                    <li><a href="www">Clubes</a></li>
+                                    <li><a href="www">Loteca</a></li>
+                                    <li><a href="www">Mascotes</a></li>
+                                    <li><a href="www">Estatuto Torcedor</a></li>
+                                    <li><a href="www">Lei do Torcedor</a></li>
+                                </ul>  
+                            </div>               
+                            <div class="lista_footer">
+                                <h3>TABELAS</h3>
+                                <ul>
+                                    <li><a href="www">Brasileirão A</a></li>
+                                    <li><a href="www">Brasileirão B</a></li>
+                                    <li><a href="www">Brasileirão C</a></li>
+                                    <li><a href="www">Brasileirão D</a></li>
+                                    <li><a href="www">Gauchão 2012</a></li>
+                                    <li><a href="www">Sul-Americana</a></li>
+                                    <li><a href="www">Copa do Brasil</a></li>
+                                    <li><a href="www">Libertadores</a></li>
+                                    <li><a href="www">Catarinense</a></li>
+                                    <li><a href="www">Carioca</a></li>
+                                    <li><a href="www">Paulista</a></li>
+                                    <li><a href="www">Paranaense</a></li>
+                                    <li><a href="www">Mineiro</a></li>
+                                </ul>  
+                            </div>               
+                            <div class="lista_footer">
+                                <h3>MULTIMÍDIA</h3>
+                                <ul>
+                                    <li><a href="www">Brasões</a></li>
+                                    <li><a href="www">Escudos - Botões</a></li>
+                                    <li><a href="www">Hinos</a></li>
+                                    <li><a href="www">Rádios Parceiras</a></li>
+                                    <li><a href="www">Wallpapers</a></li>
+                                </ul>  
+                            </div> 
+                        </nav>                                                               
+                    </div>
+                </footer>    
+            </div>
+            <div class="pai_direitos">
+                <div class="todos_os_direitos">
+                    Copyright© 2002/2013 - www.futebolnarede.com - Todos os direitos reservados (All Rights Reserved)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   Desenvolvido por Be Mobile
+                </div>
+            </div>
+        </div>  <!-- div footer-->  
+        <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script async defer type="text/javascript">
+            $(function() {  /*Esta função é para o scroll Top*/
+                $(window).scroll(function() {
+                    if ($(this).scrollTop() > 40) {
+                        $('#toTop').fadeIn();
+                    } else {
+                        $('#toTop').fadeOut();
+                    }
+                });
+                $('#toTop').click(function() {
+                    $('body,html').animate({scrollTop: 0}, 800);
+                });
+            });
+        </script>
+    </body>
+</html>
